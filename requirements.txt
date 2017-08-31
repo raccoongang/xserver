@@ -13,3 +13,4 @@ numpy==1.6.2
 lxml==2.3.6
 newrelic==2.4.0.4
 gunicorn==0.17.4
+raven==6.1.0
