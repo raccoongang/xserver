@@ -52,11 +52,3 @@ if os.path.isfile(ENV_ROOT / "env.json"):
     GRADER_ROOT = ENV_TOKENS.get('GRADER_ROOT')
 
     SANDBOX_PYTHON = ENV_TOKENS.get('SANDBOX_PYTHON', '/opt/edx/bin/sandbox-python')
-
-
-if ENV_TOKENS.get('SENTRY_DSN'):
-
-    INSTALLED_APPS += ( 'raven.contrib.django.raven_compat', )
-    RAVEN_CONFIG = {
-        'dsn': SENTRY_DSN,
-    }
